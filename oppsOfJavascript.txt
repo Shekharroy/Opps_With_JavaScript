@@ -204,3 +204,11 @@ Ans: - There are 4 Pillars of an Object-Oriented programming.
 
         addNumbers(20 + 30); // retuns 50;
         addNumbers(10 + 20 + 40); // retuns 70;
+
+
+        Construction function:
+         A function constructor is a pattern in JavaScript based on which we cann create several objects.
+
+         1. In simple terms, a constructor function is simply a function which acts as a pattern or a template for creating objects.
+         2. With consttructor function, we can instantiate objects and implement Inheritance.
+         3. To define a constructor function, a function is used. It can be a normal function or function expression.
