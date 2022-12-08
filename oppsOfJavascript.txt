@@ -1,0 +1,206 @@
+Q: 1 What is object oriented programming ?
+Ans: - Object oriented programming is a programming paradigm based on the concept of objects.
+
+# Paradigm: - Paradigm simply mean how do write and organise code in programe.
+# In object oriented programming we represent real entities is an object.
+For example: -
+
+let user{
+    name: "Chandra",
+    role: "admin",
+    access: "read-write".
+
+    addUser(){
+        // Logic to add user here;
+    },
+
+    removeUser(){
+        // Logoc to remove user here;
+    }
+
+}
+
+# An object have: 1 Date 2. Behaviour
+
+# Data: - The properties of an object call as its Data.
+        eg: 
+            name: "Chandra",
+            role: "admin",
+            access: "read-write".
+# Behaviour: The method of an object are called as its Behaviour.
+        eg: -
+             addUser(){
+                // Logic to add user here;
+            },
+
+            removeUser(){
+                // Logoc to remove user here;
+            }
+
+# NOTE: -
+
+    Here we can say we use objects the pack of "Data" and "Behaviour" of real world entities all in one a block.
+
+    Object are self contain piece of block code and we use the as a building block of our application and makes 
+    then with one another.
+
+    # Object Oriented Paradigm was develop with the goal of organising the code in order to make it more flexible and easier to
+    maintain.
+
+
+Q2: How does Object Oriented programming works in general?
+Ans: - We all know how to create and use object in javaScript. However up until now basically only use object as a loose
+collection of data and without making them intract with one another.
+
+For example: -
+
+let Chandra{
+    name: "Chandra",
+    birthYear: "1995",
+    gender: "Male".
+
+    calcAge(){
+        return new Date().getFullYear() - birthYear;
+    }
+}
+
+
+let Shyam{
+    name: "Shyam",
+    birthYear: "1990",
+    gender: "Male".
+
+    calcAge(){
+        return new Date().getFullYear() - birthYear;
+    }
+}
+
+let Amar{
+    name: "Amar",
+    birthYear: "1989",
+    gender: "Male".
+
+    calcAge(){
+        return new Date().getFullYear() - birthYear;
+    }
+}
+
+Note: I am creating above three object which is "Chandra", "Shyam" and "Amar" using object literals.
+
+
+All the three object have same properties name and same method and implementation of the object have same.
+
+
+If we need to create 100 object object we use to create object literals 100 times and write same properties and method 100 times.
+
+For prevent this: One of the best concept is to create blue print.
+
+eg: -
+let person{
+    name: "",
+    birthYear: ,
+    gender: "",
+    calcAge(){
+
+    }
+}
+
+On based on the blue print of person object I can create different objects
+Like: -
+1. Chandra,
+2. Shyam and
+3. Amar etc...
+
+Here chandra, Shyam and Amar are the instance of person object because using persion object we create these objects.
+
+Q3: What are the Pillars of Object-Oriented programming?
+Ans: - There are 4 Pillars of an Object-Oriented programming.
+       1. Inheritance,
+       2. Encapsulation,
+       3. Abstraction,
+       4. Ploymorphism
+
+    Inheritance: Inheritance is a mechanism that allows us to create new classes 
+    based on an existing class.
+
+    eg:
+    let person{
+        name: "",
+        birthYear: ,
+        gender: "",
+        calcAge(){
+        }
+    }
+
+// Employee object inherit the properties of person object which is name, birthYear, gender, calcAge();
+      let Employee extends person{
+        name: "",
+        birthYear: ,
+        gender: "",
+        calcAge(){
+        }
+        employeeId:,
+        salary:,
+        company: "",
+        calcSalary(){}
+    }
+
+    Note: - 
+    1. With Inheritance, we can reuse an existing code without repeating a code.
+    2. Inheritance is the first pillar of Object-Oriented programming
+
+    # Encapsulation: Encapsulation is the process of hiding data from the outside world.
+    The Encapsulation is achieve by using keyword "private".
+    The "private" keyword makes a properties hidden out side world.
+    for example:-
+     / Employee object inherit the properties of person object which is name, birthYear, gender, calcAge();
+      let Employee {
+        employeeId:,
+        salary:,
+        company: "",
+        calcSalary(){}
+    }
+
+    Here the salary of employee is not accessible out of the employee object i.e. the process of data hidding or Encapsulation.
+
+    # Abstraction: Abstraction is a way of hiding the implementation details and showing only the functionality to the user.
+
+    In other words, it ignores the irrelevent details and shows only the required one.
+
+    eg: -
+    let Employee{
+        name: "",
+        salary: ,
+        getSalary(){} // only specifying the functinality not the implementation and this is called as Abstraction.
+    }
+
+    let permanentEmployee extends Employee{
+        manthlySalary
+        name: "",
+        salary: ,
+        getSalary(){
+            return 12 * manthlySalary;
+        }
+    }
+
+    let partTimeEmployee extends Employee{
+        HourlySalary
+        name: "",
+        salary: ,
+        getSalary(){
+            return 12 * HourlySalary;
+        }
+    }
+
+    # Ploymorphism: Ploymorphism means different forms. In Object-Oriented programming, we can write methods with same name but different implementation.
+
+    eg: -
+        addNumbers(x, y){
+            retun x + y;
+        }
+        addNumbers(x, y, z){ // same but different signature/ parameter/ forms
+            retun x + y + z;
+        }
+
+        addNumbers(20 + 30); // retuns 50;
+        addNumbers(10 + 20 + 40); // retuns 70;
