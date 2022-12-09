@@ -1,7 +1,7 @@
 // Constructor function
 // We use function expression to create function constructor;
 
-let Person = function(name, gender, birthYear){
+let Person = function(name, gender, birthYear){ // Function Constructor
     this.name = name;
     this.gender = gender;
     this.birthYear = birthYear;
@@ -15,6 +15,7 @@ let chandra = new Person('Chandra', 'Male', 1995);
 console.log(chandra);
 chandra.calcAge();
 
+
 let Shyam = new Person('Shyam', 'Male', 1990);
 console.log(Shyam);
 Shyam.calcAge();
@@ -22,5 +23,14 @@ Shyam.calcAge();
 let Amar = new Person('Amar', 'Male', 1989);
 console.log(Amar);
 Amar.calcAge();
+
+
+let myFunction =(() => {
+    // document.getElementById("objOne").innerHTML = chandra.birthYear;
+    $("#objName").html(chandra.name);
+    $("#objGen").html(chandra.gender);
+    $("#objOne").html(chandra.birthYear);
+    // $("#objOne").show();
+  });
 
 
